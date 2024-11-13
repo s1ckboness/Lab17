@@ -1,5 +1,5 @@
 document.getElementById('welcomeBtn').addEventListener('click', function() {
-    alert('¡Bienvenido a mi portafolio!');
+    alert('Bienvenido a mi portafolio' );
 });
 
 const form = document.getElementById('contactForm');

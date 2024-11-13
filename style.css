@@ -4,9 +4,13 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
+    width: 100%;
     background-color: #4CAF50;
     color: white;
     text-align: center;
@@ -14,21 +18,23 @@ header {
 }
 
 .biografia, .habilidades, footer {
-    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
     padding: 10px;
-    max-width: 600px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 8px;
-}
-
-h1, h2 {
-    color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    width: 100%;
 }
 
 li {
@@ -36,12 +42,9 @@ li {
     border-bottom: 1px solid #ccc;
 }
 
-footer {
-    text-align: center;
-}
-
 input[type="text"], input[type="email"], button {
     width: 100%;
+    max-width: 300px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -60,7 +63,6 @@ button:hover {
 }
 
 #welcomeBtn {
-    display: block;
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #008CBA;
